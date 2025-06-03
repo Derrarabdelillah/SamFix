@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="src/input.css">
+    <link rel="stylesheet" href="src/output.css">
+
+    <!-- Link FontAwesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <!-- Montserrat Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>SamFix | Accessoires et réparation</title>
+</head>
+<body class="dark:bg-mainD">
+
+
+      <!-- Sticky Header Start -->
+     <header class="sticky top-0 z-9999 bg-white shadow-xl border border-gray-200 py-4 dark:bg-mainD">
+        
+        <!-- Nav Start -->
+        <nav class="container flex items-center justify-between gap-4">
+            
+            <!-- Logo Start -->
+            <div class="">
+                <a href=""><img class="w-35" src="/assets/Brand/WhiteLogo-r.png" alt=""></a>
+            </div>
+            <!-- Logo End -->
+
+            <!-- Nav List Start -->
+            <div class="nav-links absolute border-gray-200 border bg-white min-h-[37vh] left-0 top-[-600px] w-full flex md:border-0 md:items-center md:static md:min-h-fit md:w-auto">
+                <ul class="flex flex-col justify-center items-center w-full gap-6 font-[600] md:gap-8 md:items-center md:flex-row">
+
+                    <li>
+                        <a href="index.html" class="text-[17px] hover:text-green-500 hover:pe-2">Home</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#about" class="text-[17px] hover:text-green-500 hover:pe-2">About</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#services" class="text-[17px] hover:text-green-500 hover:pe-2">Services</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#" class="text-[17px] hover:text-green-500 hover:pe-2">Blogs</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#" class="text-[17px] hover:text-green-500 hover:pe-2">Contact </a>
+                    </li>
+                                        
+                    <li>
+                        <div class="md:hidden">
+                        <!-- CTA Whatsapp Button Start -->
+                            <a href="index.html">
+                                <button class="bg-main text-white ">
+                                    <i class="fa-brands fa-whatsapp text-2xl"></i>
+                                    Connectons-nous
+                                </button>
+                            </a>
+                        <!-- CTA Whatsapp Button End -->
+                        
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- Nav List End -->
+
+            <!-- Groupe Start -->
+             <div class="flex items-center gap-6">
+
+                <div class="hidden md:flex items-center gap-4">
+                    
+                    <!-- CTA Whatsapp Button Start -->
+                    <a href="index.html">
+                        <button class="bg-main text-white ">
+                            <i class="fa-brands fa-whatsapp text-2xl"></i>
+                            Connectons-nous
+                        </button>
+                    </a>
+                    <!-- CTA Whatsapp Button End -->
+                    
+                    <button id="theme-toggle" type="button" class=" hover:bg-gray-100 rounded-lg text-sm p-2.5 dark:hover:bg-gray-900">
+                        <svg id="theme-toggle-dark-icon" class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                        <svg id="theme-toggle-light-icon" class="hidden w-6 h-6 dark:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                    </button>
+                </div>
+
+                <div class="flex flex-row gap-4 items-center md:hidden">
+                    
+                    <button id="theme-toggle" type="button" class="hover:bg-gray-100 rounded-lg text-sm p-2.5 dark:hover:bg-gray-900">
+                        <svg id="theme-toggle-dark-icon" class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                        <svg id="theme-toggle-light-icon" class="hidden w-6 h-6 dark:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                    </button>
+
+                    <i class="fa-solid fa-bars text-2xl cursor-pointer " onclick="onToggleMenu(this)" ></i>
+                </div>
+                
+            </div>
+            
+            <!-- Groupe End -->
+            
+        </nav>
+        <!-- Nav End -->
+        
+    </header>
+    <!-- Sticky Header End -->
+    
+
+    <section>
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden opacity-50">
+            <div class="absolute top-20 left-10 w-32 h-32 bg-main rounded-full filter blur-3xl animate-pulse"></div>
+            <div class="absolute top-20 right-10 w-40 h-40 bg-primary rounded-full filter blur-3xl animate-pulse"></div>
+            <div class="absolute top-80 left-20 w-40 h-40 bg-main rounded-full filter blur-3xl animate-pulse"></div>
+            <div class="absolute bottom-80 left-20 w-48 h-48 bg-main rounded-full filter blur-3xl animate-pulse"></div>
+            <div class="absolute bottom-40 left-1/2 w-48 h-48 bg-primary rounded-full filter blur-3xl animate-pulse"></div>
+        </div>
+    </section>
+
+
+
+    <script src="src/script.js"></script>
+</body>
+</html>
