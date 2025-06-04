@@ -16,25 +16,30 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+    <!-- Swiper Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
     <title>SamFix | Accessoires et réparation</title>
 </head>
 <body class="dark:bg-mainD">
 
 
       <!-- Sticky Header Start -->
-     <header class="sticky top-0 z-9999 bg-white shadow-xl border border-gray-200 py-4 dark:bg-mainD">
+     <header class="sticky top-0 z-9999 bg-white shadow-xl border-b border-gray-50 py-4 dark:bg-mainD">
         
         <!-- Nav Start -->
         <nav class="container flex items-center justify-between gap-4">
             
             <!-- Logo Start -->
             <div class="">
-                <a href=""><img class="w-35" src="/assets/Brand/WhiteLogo-r.png" alt=""></a>
+                <a href=""><img loading="lazy" class="w-35" src="/assets/Brand/WhiteLogo-r.png" alt=""></a>
             </div>
             <!-- Logo End -->
 
             <!-- Nav List Start -->
-            <div class="nav-links absolute border-gray-200 border bg-white min-h-[37vh] left-0 top-[-600px] w-full flex md:border-0 md:items-center md:static md:min-h-fit md:w-auto">
+            <div class="nav-links absolute border-gray-200 border bg-white min-h-[40vh] left-0 top-[-600px] w-full flex md:border-0 md:items-center md:static md:min-h-fit md:w-auto dark:bg-mainD dark:text-white">
                 <ul class="flex flex-col justify-center items-center w-full gap-6 font-[600] md:gap-8 md:items-center md:flex-row">
 
                     <li>
@@ -114,20 +119,350 @@
         
     </header>
     <!-- Sticky Header End -->
-    
 
-    <section>
-        <div class="absolute top-0 left-0 w-full h-full overflow-hidden opacity-50">
-            <div class="absolute top-20 left-10 w-32 h-32 bg-main rounded-full filter blur-3xl animate-pulse"></div>
-            <div class="absolute top-20 right-10 w-40 h-40 bg-primary rounded-full filter blur-3xl animate-pulse"></div>
-            <div class="absolute top-80 left-20 w-40 h-40 bg-main rounded-full filter blur-3xl animate-pulse"></div>
-            <div class="absolute bottom-80 left-20 w-48 h-48 bg-main rounded-full filter blur-3xl animate-pulse"></div>
-            <div class="absolute bottom-40 left-1/2 w-48 h-48 bg-primary rounded-full filter blur-3xl animate-pulse"></div>
+    <!-- Hero Section Start -->
+    <section class="dark:text-white">
+
+        <div class="container flex flex-col gap-8 justify-center md:items-center min-h-screen md:flex-row">
+               
+            <!-- Description Start -->
+             <div class="flex flex-col gap-6 md:w-1/2">
+                <h1 class="font-extrabold text-4xl md:text-6xl dark:text-white">Redonnez vie à vos appareils</h1>
+                <h2 class="font-medium text-xl md:text-3xl dark:text-white">Redonnez vie à vos appareils</h2>
+                <p class="text-gray-500 text-sm leading-relaxed dark:text-gray-400"> <a href="https://www.instagram.com/sam_fix_store/" class="main-link">SamFix</a> is ​​a local tech shop based in Sidi Bel Abbès, Algeria, specializing in: Selling accessories (phones, AirPods, smartwatches, chargers, etc.) Repairing phones and smartwatches (screens, batteries, etc.)</p>
+                
+                    <!-- CTA Whatsapp Button Start -->
+                    <a href="https://wa.me/+2130798507160">
+                        <button class="bg-main text-white ">
+                            <i class="fa-brands fa-whatsapp text-2xl"></i>
+                            Connectons-nous
+                        </button>
+                    </a>
+                    <!-- CTA Whatsapp Button End -->
+            
+            </div>
+            <!-- Description End -->
+                            
+            <!-- Img Start -->
+             <div class="md:w-1/2">
+                <img loading="lazy" src="assets/HeroSectionimgs/HeroNormal.svg" class="rounded-lg hover:scale-105" alt="">
+            </div>
+            <!-- Img End -->
         </div>
+    
+        <div class="container flex flex-col gap-8 py-4 border-t border-grayBorder md:flex-row md:gap-4 dark:border-slate-700">
+
+            <!-- Card Start -->
+             <div class="flex flex-row gap-2 py-8 px-4 items-center border border-gray-200 shadow-lg shadow-main rounded-lg hover:scale-103 md:w-1/3 hover:bg-gray-50 dark:border dark:border-slate-700 dark:shadow-xs">
+                
+                <div class="flex flex-row gap-2 items-center justify-center">
+                    <i class="fa-solid fa-shield text-4xl text-main"></i>
+                    <h3 class="font-bold text-xl">99%</h3>
+                    <h3 class="font-bold text-xl">Réparation garantie </h3>
+                </div>
+
+                <!-- <div class="flex flex-col gap-2">
+                </div> -->
+
+             </div>
+            <!-- Card End -->
+            
+            <!-- Card Start -->
+             <div class="flex flex-row gap-2 py-8 px-4 items-center border border-gray-200 shadow-lg shadow-main rounded-lg hover:scale-103 md:w-1/3 hover:bg-gray-50 dark:border dark:border-slate-700 dark:shadow-xs">
+                
+                <div class="flex flex-row gap-2 items-center justify-center">
+                    <i class="fa-solid fa-users-rays text-4xl text-main"></i>
+                    <h3 class="font-bold text-xl">+50</h3>
+                    <h3 class="font-bold text-xl">Clients satisfaits</h3>
+                </div>
+
+                <!-- <div class="flex flex-col gap-2">
+                </div> -->
+
+             </div>
+            <!-- Card End -->
+
+            <!-- Card Start -->
+             <div class="flex flex-row gap-2 py-8 px-4 items-center border border-gray-200 shadow-lg shadow-main rounded-lg hover:scale-103 md:w-1/3 hover:bg-gray-50 dark:border dark:border-slate-700 dark:shadow-xs">
+                
+                <div class="flex flex-row gap-2 items-center justify-center">
+                    <i class="fa-solid fa-cubes text-4xl text-main"></i>
+                    <h3 class="font-bold text-xl">+60</h3>
+                    <h3 class="font-bold text-xl">Produits vendons</h3>
+                </div>
+
+                <!-- <div class="flex flex-col gap-2">
+                </div> -->
+
+             </div>
+            <!-- Card End -->
+
+        </div>
+
     </section>
+    <!-- Hero Section End -->
+
+    <!-- Shape Animations Start -->
+    <div class="absolute top-0 left-0 w-full h-full overflow-hidden opacity-50 -z-40">
+        <div class="absolute top-20 left-10 w-32 h-32 bg-main rounded-full filter blur-3xl animate-pulse"></div>
+        <div class="absolute top-20 right-10 w-40 h-40 bg-primary rounded-full filter blur-3xl animate-pulse dark:bg-main"></div>
+        <div class="absolute top-80 left-20 w-40 h-40 bg-main rounded-full filter blur-3xl animate-pulse"></div>
+        <div class="absolute bottom-80 left-20 w-48 h-48 bg-main rounded-full filter blur-3xl animate-pulse"></div>
+        <div class="absolute bottom-40 left-1/2 w-48 h-48 bg-primary rounded-full filter blur-3xl animate-pulse dark:bg-main"></div>
+    </div>
+    <!-- Shape Animations End -->
+
+    <!-- Logo Slider Section Start --> 
+    <section class="dark:text-white " id="section">
+
+        <div class="flex flex-col gap-6 container">
+
+        <div class="flex flex-col gap-3 justify-center items-center">
+
+            <div class="flex flex-col gap-4 items-center text-center md:max-w-200">
+            
+                <div class="flex flex-row gap-2 text-main items-center ">
+                <i class="fa-solid fa-mobile-screen"></i>
+                <h3 class="font-bold text-sm dark:text-white">Marques supportees</h3>
+                </div>
+
+                <h3 class="font-bold text-lg md:text-2xl dark:text-white">Réparation <span class="main-link">toutes marques</span></h3>
+                <p class="text-gray-500 text-sm leading-relaxed dark:text-gray-400">
+                    les clients qui font confiance à <a href="https://www.instagram.com/sam_fix_store/" class="main-link">SamFix Store</a>
+                      pour la fiabilité et l’expertise. Notre engagement envers la qualité, le service et l’innovation nous permet de répondre
+                      aux besoins d’une clientèle variée à travers les <span class="main-link">58 wilayas.</span></span>
+                </p>
+
+            </div>
+
+   
+        </div>
+
+        </div>
+
+    <!-- Slider -->
+    <div class="slider my-5">
+        <div class="swiper-wrapper gap-4" id="swiperContainer">
+            <!-- The Logos will insert here automaticly by JavaScript -->
+        </div>
+    </div>
+
+    </section>
+    <!-- Logo Slider Section End -->
 
 
+    <!-- AboutUs Start -->
+     <section class="dark:text-white" id="section">
 
+        <div class="container flex flex-col gap-4">
+            <div class="flex flex-col gap-8 justify-center items-center">
+
+                <div class="flex flex-row gap-4 bg-gray-50 px-2 md:px-4 py-4 rounded-lg">
+
+                    <div class="flex flex-row gap-2 items-center justify-center">
+                        <i class="fa-solid fa-circle text-[8px] md:text-xs text-main"></i>
+                        <h3 class="font-medium text-sm dark:text-white">Marques supportees</h3>
+                    </div>
+                    
+                    <div class="flex flex-row gap-2 items-center justify-center">
+                        <i class="fa-solid fa-circle text-[8px] md:text-xs text-main"></i>
+                        <h3 class="font-medium text-sm dark:text-white">Piéce d’origine</h3>
+                    </div>
+                    
+                    <div class="flex flex-row gap-2 items-center justify-center">
+                        <i class="fa-solid fa-circle text-[8px] md:text-xs text-main"></i>
+                        <h3 class="font-medium text-sm dark:text-white">Service rapide</h3>
+                    </div>
+                    
+
+                </div>
+
+                <div class="flex flex-col gap-8">
+
+                    <!-- First Box Start -->
+                     <div class="flex flex-col gap-8 items-center  md:flex-row">
+
+                        <!-- Desc -->
+                         <div class="flex flex-col gap-3 md:w-1/2">
+                           <h3 class="font-bold text-2xl md:text-4xl">À propos de nous</h3> 
+                           <h3 class="font-bold text-xl text-main">Qui sommes-nous ?</h3> 
+                           <p class="text-gray-500 text-sm leading-relaxed dark:text-gray-400">
+                            <a href="https://www.instagram.com/sam_fix_store/" class="main-link">SamFix Store</a> propose la réparation de téléphones et montres connectées ainsi qu’un large choix d’accessoires high-tech. AirPods, coques, chargeurs, écouteurs Bluetooth… tout ce qu’il vous faut en un seul endroit. Livraison rapide dans les 
+                            <span class="main-link">58 wilayas</span> d’Algérie.
+                        </p>
+
+                    <!-- CTA Whatsapp Button Start -->
+                    <a href="https://wa.me/+2130798507160">
+                        <button class="bg-main text-white ">
+                            <i class="fa-brands fa-whatsapp text-2xl"></i>
+                            Connectons-nous
+                        </button>
+                    </a>
+                    <!-- CTA Whatsapp Button End -->
+                         </div>
+                         
+                        <!-- Img Start -->
+                            <div class="flex justify-center md:w-1/2">
+                                <img loading="lazy" src="assets/AbouUsImgs/Innovation-bro.png" class="rounded-lg w-70 hover:scale-105 md:w-100" alt="">
+                            </div>
+                        <!-- Img End -->
+                             
+                     </div>
+                    <!-- First Box End -->
+                     
+                    <!-- Second Box Start -->
+                     <div class="flex flex-col gap-8 items-center  md:flex-row-reverse">
+
+                        <!-- Desc -->
+                         <div class="flex flex-col gap-3 md:text-start md:w-1/2">
+                           <h3 class="font-bold text-2xl md:text-4xl">À propos de nous</h3> 
+                           <h3 class="font-bold text-xl text-main">Que faisons-nous ?</h3> 
+                           <p class="text-gray-500 text-sm leading-relaxed dark:text-gray-400">
+                            <a href="https://www.instagram.com/sam_fix_store/" class="main-link">SamFix Store</a> nous réparons vos smartphones et montres connectées avec expertise et rapidité. Nous proposons aussi une large gamme d’accessoires high-tech : écouteurs, coques, chargeurs, supports et plus encore. Notre mission : vous offrir des produits fiables, un service client réactif, et une 
+                            <span class="main-link">livraison</span> partout en Algérie.
+                        </p>
+
+                    <!-- CTA Whatsapp Button Start -->
+                    <a href="https://wa.me/+2130798507160">
+                        <button class="bg-main text-white ">
+                            <i class="fa-brands fa-whatsapp text-2xl"></i>
+                            Connectons-nous
+                        </button>
+                    </a>
+                    <!-- CTA Whatsapp Button End -->
+                         </div>
+                         
+                        <!-- Img Start -->
+                            <div class=" md:w-1/2">
+                                <img loading="lazy" src="assets/AbouUsImgs/Innovation-amico.png" class="rounded-lg w-70 hover:scale-105 md:w-100" alt="">
+                            </div>
+                        <!-- Img End -->
+                             
+                     </div>
+                    <!-- Second Box End -->
+                     
+
+                </div>
+
+        </div>
+
+     </section>
+    <!-- AboutUs End -->
+
+
+    <!-- Services Section Start -->
+     <section class="dark:text-white" id="section">
+
+        <div class="container flex flex-col gap-4">
+            <div class="flex flex-col gap-4 justify-center items-center">
+                <h3 class="font-bold text-2xl md:text-4xl">Nos Services</h3> 
+
+                <div class="flex flex-row gap-6 bg-gray-50 px-2 md:px-4 py-4 rounded-lg">
+
+                    <div class="flex flex-row gap-2 items-center justify-center">
+                        <i class="fa-solid fa-circle text-[8px] md:text-xs text-main"></i>
+                        <h3 class="font-medium text-sm dark:text-white">Réparation</h3>
+                    </div>
+                    
+                    <div class="flex flex-row gap-2 items-center justify-center">
+                        <i class="fa-solid fa-circle text-[8px] md:text-xs text-main"></i>
+                        <h3 class="font-medium text-sm dark:text-white">Vente d'accessoires</h3>
+                    </div>
+                    
+
+                </div>
+
+                <div class="flex flex-col justify-center gap-8 md:flex-row">
+
+
+                    <!-- Card Start -->
+                     <div class="flex flex-col gap-4 py-8 px-6 text-center items-center border border-gray-200 shadow-lg shadow-main rounded-lg hover:scale-103 hover:bg-gray-50 md:w-1/3 dark:border dark:border-slate-700 dark:shadow-xs">
+                        <i class="fa-solid fa-screwdriver-wrench text-4xl md:text-6xl py-4 px-4 bg-main text-white rounded-lg"></i>
+                        <h3 class="font-bold text-xl">Réparation </h3>
+                        <p class="text-gray-500 text-sm leading-relaxed dark:text-gray-400"><span class="main-link">Réparation</span> de smartphones et montres connectées. Changement d’écran, batterie, connecteurs, etc. Service rapide et fiable à Sidi Bel Abbès.</p>
+                     </div>
+                    <!-- Card End -->
+                                          
+                    <!-- Card Start -->
+                     <div class="flex flex-col gap-4 py-8 px-6 text-center items-center border border-gray-200 shadow-lg shadow-main rounded-lg hover:scale-103 hover:bg-gray-50 md:w-1/3 dark:border dark:border-slate-700 dark:shadow-xs">
+                        <i class="fa-solid fa-cubes text-4xl md:text-6xl py-4 px-4 bg-main text-white rounded-lg"></i>
+                        <h3 class="font-bold text-xl">Accessoires </h3>
+                        <p class="text-gray-500 text-sm leading-relaxed dark:text-gray-400">Vente d’accessoires high-tech de qualité. AirPods, écouteurs Bluetooth, coques, câbles et plus. Livraison partout en Algérie, dans les 
+                            <span class="main-link">58 wilayas.</span></p>
+                     </div>
+                    <!-- Card End -->
+
+                </div>
+
+        </div>
+
+     </section>
+    <!-- Services Section End -->
+
+    <!-- AboutUs Start -->
+     <section class="dark:text-white" id="section">
+
+        <div class="container flex flex-col gap-4">
+            <div class="flex flex-col gap-8 justify-center items-center">
+
+                <div class="flex flex-col gap-8">
+
+                    <!-- First Box Start -->
+                     <div class="flex flex-col gap-8 items-center  md:flex-row">
+
+                        <!-- Desc -->
+                         <div class="flex flex-col gap-3 md:w-1/2">
+                           <h3 class="font-bold text-2xl md:text-4xl">À propos de nous</h3> 
+                           <h3 class="font-bold text-xl text-main">Qui sommes-nous ?</h3> 
+                           <p class="text-gray-500 text-sm leading-relaxed dark:text-gray-400">
+                            <a href="https://www.instagram.com/sam_fix_store/" class="main-link">SamFix Store</a> propose la réparation de téléphones et montres connectées ainsi qu’un large choix d’accessoires high-tech. AirPods, coques, chargeurs, écouteurs Bluetooth… tout ce qu’il vous faut en un seul endroit. Livraison rapide dans les 
+                            <span class="main-link">58 wilayas</span> d’Algérie.
+                        </p>
+
+                    <!-- CTA Whatsapp Button Start -->
+                    <a href="https://wa.me/+2130798507160">
+                        <button class="bg-main text-white ">
+                            <i class="fa-brands fa-whatsapp text-2xl"></i>
+                            Connectons-nous
+                        </button>
+                    </a>
+                    <!-- CTA Whatsapp Button End -->
+                         </div>
+                         
+                        <div class="grid grid-cols-1 md:grid-cols-12 justify-center gap-8 md:flex-row">
+
+                            <!-- Card Start -->
+                            <div class="flex flex-col gap-4 py-8 px-6 text-center items-center border border-gray-200 shadow-lg shadow-main rounded-lg hover:scale-103 hover:bg-gray-50 md:w-1/3 dark:border dark:border-slate-700 dark:shadow-xs">
+                                <i class="fa-solid fa-screwdriver-wrench text-4xl md:text-6xl py-4 px-4 bg-main text-white rounded-lg"></i>
+                                <h3 class="font-bold text-xl">Réparation </h3>
+                                <p class="text-gray-500 text-sm leading-relaxed dark:text-gray-400"><span class="main-link">Réparation</span> de smartphones et montres connectées. Changement d’écran, batterie, connecteurs, etc. Service rapide et fiable à Sidi Bel Abbès.</p>
+                            </div>
+                            <!-- Card End -->
+                                                
+                            <!-- Card Start -->
+                            <div class="flex flex-col gap-4 py-8 px-6 text-center items-center border border-gray-200 shadow-lg shadow-main rounded-lg hover:scale-103 hover:bg-gray-50 md:w-1/3 dark:border dark:border-slate-700 dark:shadow-xs">
+                                <i class="fa-solid fa-cubes text-4xl md:text-6xl py-4 px-4 bg-main text-white rounded-lg"></i>
+                                <h3 class="font-bold text-xl">Accessoires </h3>
+                                <p class="text-gray-500 text-sm leading-relaxed dark:text-gray-400">Vente d’accessoires high-tech de qualité. AirPods, écouteurs Bluetooth, coques, câbles et plus. Livraison partout en Algérie, dans les 
+                                    <span class="main-link">58 wilayas.</span></p>
+                            </div>
+                            <!-- Card End -->
+
+                        </div>
+                             
+                     </div>
+                    <!-- First Box End -->
+
+                </div>
+
+        </div>
+
+     </section>
+    <!-- AboutUs End -->
+
+    <!-- JS Link -->
     <script src="src/script.js"></script>
+
+
 </body>
 </html>
