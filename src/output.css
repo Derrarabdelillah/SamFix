@@ -361,8 +361,26 @@
   .h-90 {
     height: calc(var(--spacing) * 90);
   }
+  .h-100 {
+    height: calc(var(--spacing) * 100);
+  }
+  .h-102 {
+    height: calc(var(--spacing) * 102);
+  }
+  .h-105 {
+    height: calc(var(--spacing) * 105);
+  }
+  .h-120 {
+    height: calc(var(--spacing) * 120);
+  }
+  .h-150 {
+    height: calc(var(--spacing) * 150);
+  }
   .h-\[5px\] {
     height: 5px;
+  }
+  .h-auto {
+    height: auto;
   }
   .h-full {
     height: 100%;

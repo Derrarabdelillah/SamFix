@@ -112,8 +112,8 @@ document.addEventListener("DOMContentLoaded", () => {
         slideDiv.className = "swiper-slide bg-white shadow-lg border border-gray-200 rounded-lg hover:bg-gray-50 dark:border dark:border-slate-700 dark:shadow-xs dark:bg-mainD ";
 
         slideDiv.innerHTML += `
-                        <div class="relative">
-                            <a href="${e.postLink}"><img src="${e.imageSrc}" alt="${e.alt}" class="w-full h-90 rounded-tl-lg rounded-tr-lg object-cover"></a>
+                        <div class="relative h-102">
+                            <a href="${e.postLink}"><img src="${e.imageSrc}" alt="${e.alt}" class="w-full h-70 rounded-tl-lg rounded-tr-lg object-cover"></a>
 
                             <p class="absolute left-1 top-1 text-sm bg-gradient-to-r from-[#833ab4] to-[#fd1d1d] font-medium text-white w-fit px-2 py-1 rounded-full">Post</p>
                             <div class=" p-4">
