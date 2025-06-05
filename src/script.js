@@ -29,32 +29,6 @@ const swiperLogo = new Swiper('.slider', {
   }
 });
 
-// Instagram Slider
-const swiper = new Swiper('.swiper', {
-
-  speed: 400,
-  loop: true,
-  grabCursor: true,
-
-  autoplay:{
-    delay: 3000,
-  },
-
-  
-  breakpoints: {
-    0: {
-        slidesPerView: 1
-    },
-
-    620: {
-        slidesPerView: 2
-    },
-
-    1024: {
-        slidesPerView: 3
-    },
-  }
-});
 
 // Insert Logos in the Slider
 document.addEventListener('DOMContentLoaded', function () {
@@ -89,6 +63,32 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+// Instagram Slider
+const swiper = new Swiper('.swiper', {
+
+  speed: 400,
+  loop: true,
+  grabCursor: true,
+
+  autoplay:{
+    delay: 3000,
+  },
+
+  
+  breakpoints: {
+    0: {
+        slidesPerView: 1
+    },
+
+    620: {
+        slidesPerView: 2
+    },
+
+    1024: {
+        slidesPerView: 3
+    },
+  }
+});
 
 // Insert Instagram Cards
 document.addEventListener("DOMContentLoaded", () => {
@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         slideDiv.innerHTML += `
                         <div class="relative">
-                            <a href="${e.postLink}"><img src="${e.imageSrc}" alt="${e.alt}" class="w-full h-70 rounded-tl-lg rounded-tr-lg object-cover"></a>
+                            <a href="${e.postLink}"><img src="${e.imageSrc}" alt="${e.alt}" class="w-full h-90 rounded-tl-lg rounded-tr-lg object-cover"></a>
 
                             <p class="absolute left-1 top-1 text-sm bg-gradient-to-r from-[#833ab4] to-[#fd1d1d] font-medium text-white w-fit px-2 py-1 rounded-full">Post</p>
                             <div class=" p-4">
