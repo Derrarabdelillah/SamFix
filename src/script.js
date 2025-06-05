@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function () {
         { type: 'image', src: 'assets/LogoSliderImgs/Huawei-Logo.wine.webp', alt: 'Huawei' },
         { type: 'image', src: 'assets/LogoSliderImgs/OnePlus-Logo.wine.webp', alt: 'OnePlus' },
         { type: 'image', src: 'assets/LogoSliderImgs/Oppo-Logo.wine.webp', alt: 'Oppo' },
-        { type: 'image', src: 'assets/LogoSliderImgs/Nokia-Logo.wine.webp', alt: 'Nokia' },
+        { type: 'image', src: 'assets/LogoSliderImgs/Nokia-logo.wine.webp', alt: 'Nokia' },
         { type: 'image', src: 'assets/LogoSliderImgs/Vivo-Logo.wine.webp', alt: 'Vivo' },
     ];
 
@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Loop over logoSliderData and create slides
     logoSliderData.forEach((element) => {
         let slideDiv = document.createElement('div');
-        slideDiv.className = 'swiper-slide border border-gray-200 shadow-lg shadow-main rounded-lg hover:bg-gray-50 dark:border dark:border-slate-700 dark:shadow-xs hover:dark:bg-gray-50';
+        slideDiv.className = 'swiper-slide border border-gray-200 shadow-lg shadow-main rounded-lg overflow-x-hidden hover:bg-gray-50 dark:border dark:border-slate-700 dark:shadow-xs hover:dark:bg-gray-50';
 
         let img = document.createElement('img');
         img.loading = 'lazy';
