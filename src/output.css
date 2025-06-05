@@ -1071,6 +1071,7 @@
 }
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 button {
   padding: 10px 15px 10px 15px;
