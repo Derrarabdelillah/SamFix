@@ -1120,6 +1120,15 @@ button:hover {
 .scroller {
   z-index: 999999;
 }
+.slider {
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+}
+.swiper-wrapper {
+  overflow: visible !important;
+}
 @media (min-width: 768px) {
   .container {
     width: 730px;

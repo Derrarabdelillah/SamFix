@@ -90,6 +90,19 @@ button:hover {
   z-index: 999999;
 }
 
+/* Slider overflow fix */
+.slider {
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+}
+
+/* Remove overflow hidden from swiper-wrapper to allow scrolling */
+.swiper-wrapper {
+  overflow: visible !important;
+}
+
 /* Small */
 @media (min-width: 768px) {
   .container {
