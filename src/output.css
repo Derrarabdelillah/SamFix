@@ -571,6 +571,9 @@
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
   }
+  .py-2 {
+    padding-block: calc(var(--spacing) * 2);
+  }
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
   }
@@ -1123,7 +1126,6 @@ button:hover {
 .slider {
   overflow: hidden;
   width: 100%;
-  max-width: 100%;
   position: relative;
 }
 .swiper-wrapper {
