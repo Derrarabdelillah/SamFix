@@ -79,6 +79,42 @@ button:hover {
   margin: 100px 0;
 }
 
+/* Instagram Linear Gradient Background */
+.gradient {
+  background: #833ab4;
+  background: linear-gradient(
+    to right,
+    #833ab4,#fd1d1d,#fcb045
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 1rem;
+  width: 50%;
+  margin-left: auto;
+}
+
+/* Whatsapp Button */
+.top {
+    z-index: 1903487;
+    right: -200px;
+}
+
+.active {
+    right: 10px;
+}
+
+
+/* top  Scroller */
+.scroller {
+  z-index: 999999;
+}
+
 /* Small */
 @media (min-width: 768px) {
   .container {
@@ -101,44 +137,3 @@ button:hover {
 }
 
 /* ? End Css globel reset */
-
-/* Animations */
-@keyframes float1 {
-    0%, 100% { transform: translate(0, 0); }
-     50% { transform: translate(20px, 20px); }
-}
-
-@keyframes float2 {
-    0%, 100% { transform: translate(0, 0); }
-    50% { transform: translate(-15px, 15px); }
-}
-
-@keyframes float3 {
-    0%, 100% { transform: translate(0, 0); }
-    50% { transform: translate(0, -20px); }
-}
-.animate-float1 { animation: float1 8s ease-in-out infinite; }
-.animate-float2 { animation: float2 10s ease-in-out infinite; }
-.animate-float3 { animation: float3 12s ease-in-out infinite; }
-
-/* Orb follow effect */
-.orb {
-    transform: translate(-50%, -50%);
-    opacity: 0.3;
-    transition: transform 0.1s ease-out;
-}
-
-/* Dark Mode */
-.dark-mode {
-    background-color: var(--color-main-dark);
-    
-}
-
-.cards {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, auto);
-  gap: 1rem;
-  width: 50%;
-  margin-left: auto;
-}

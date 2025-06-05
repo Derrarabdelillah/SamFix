@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,22 +25,32 @@
 </head>
 <body class="dark:bg-mainD">
 
+      <!-- Whtasapp Chat Button Start -->
+    <div>
+        <a href="https://wa.me/+2130798507160" ><i
+                class="top fa-brands fa-whatsapp  bg-main text-2xl px-3 py-3 md:px-4 md:py-4 rounded-full text-white  cursor-pointer z-10 fixed bottom-5 scale-95 hover:scale-105"></i></a>
+    </div>
+    <!-- Whtasapp Chat Button End -->
+
+    <!-- Scroller Start -->
+    <div class="scroller bg-main fixed left-0 top-0 h-[5px] text-transparent"></div>
+    <!-- Scroller End -->
 
       <!-- Sticky Header Start -->
-     <header class="sticky top-0 z-9999 bg-white shadow-xl border-b border-gray-50 py-4 dark:bg-mainD">
+     <header class="sticky top-0 z-9999 bg-white shadow-xl border-b border-gray-50 py-4">
         
         <!-- Nav Start -->
         <nav class="container flex items-center justify-between gap-4">
             
             <!-- Logo Start -->
             <div class="">
-                <a href=""><img loading="lazy" class="w-35" src="/assets/Brand/WhiteLogo-r.png" alt=""></a>
+                <a href=""><img loading="lazy" class="w-35 img" src="/assets/Brand/WhiteLogo-r.png" alt=""></a>
             </div>
             <!-- Logo End -->
 
             <!-- Nav List Start -->
-            <div class="nav-links absolute border-gray-200 border bg-white min-h-[40vh] left-0 top-[-600px] w-full flex md:border-0 md:items-center md:static md:min-h-fit md:w-auto dark:bg-mainD dark:text-white">
-                <ul class="flex flex-col justify-center items-center w-full gap-6 font-[600] md:gap-8 md:items-center md:flex-row">
+            <div class="nav-links absolute border-gray-200 border bg-white min-h-[40vh] left-0 top-[-600px] w-full flex md:border-0 md:items-center md:static md:min-h-fit md:w-auto dark:text-white">
+                <ul class="flex flex-col justify-center items-center w-full gap-6 font-[600] md:gap-8 md:items-center md:flex-row dark:text-black">
 
                     <li>
                         <a href="index.html" class="text-[17px] hover:text-green-500 hover:pe-2">Home</a>
@@ -94,18 +104,33 @@
                     </a>
                     <!-- CTA Whatsapp Button End -->
                     
-                    <button id="theme-toggle" type="button" class=" hover:bg-gray-100 rounded-lg text-sm p-2.5 dark:hover:bg-gray-900">
-                        <svg id="theme-toggle-dark-icon" class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
-                        <svg id="theme-toggle-light-icon" class="hidden w-6 h-6 dark:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                    <!-- Mode Switcher -->
+                <button onclick="(() => document.body.classList.toggle('dark'))()"
+                        class="h-13 w-13 rounded-lg p-2 bg-gray-100 dark:hover:bg-gray-100 ">
+                        <svg class="fill-violet-700 block dark:hidden" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                        </svg>
+                        <svg class="fill-yellow-500 hidden dark:block" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                                fill-rule="evenodd" clip-rule="evenodd"></path>
+                        </svg>
                     </button>
                 </div>
 
                 <div class="flex flex-row gap-4 items-center md:hidden">
                     
-                    <button id="theme-toggle" type="button" class="hover:bg-gray-100 rounded-lg text-sm p-2.5 dark:hover:bg-gray-900">
-                        <svg id="theme-toggle-dark-icon" class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
-                        <svg id="theme-toggle-light-icon" class="hidden w-6 h-6 dark:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
-                    </button>
+        <button onclick="(() => document.body.classList.toggle('dark'))()"
+                class="h-12 w-12 rounded-lg p-2 hover:bg-gray-100 dark:hover:bg-gray-700">
+                <svg class="fill-violet-700 block dark:hidden" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                </svg>
+                <svg class="fill-yellow-500 hidden dark:block" fill="currentColor" viewBox="0 0 20 20">
+                    <path
+                        d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                        fill-rule="evenodd" clip-rule="evenodd"></path>
+                </svg>
+            </button>
 
                     <i class="fa-solid fa-bars text-2xl cursor-pointer " onclick="onToggleMenu(this)" ></i>
                 </div>
@@ -153,7 +178,7 @@
         <div class="container flex flex-col gap-8 py-4 border-t border-grayBorder md:flex-row md:gap-4 dark:border-slate-700">
 
             <!-- Card Start -->
-             <div class="flex flex-row gap-2 py-8 px-4 items-center border border-gray-200 shadow-lg shadow-main rounded-lg hover:scale-103 md:w-1/3 hover:bg-gray-50 dark:border dark:border-slate-700 dark:shadow-xs">
+             <div class="flex flex-row gap-2 py-8 px-4 items-center border border-gray-200 shadow-lg shadow-main rounded-lg hover:scale-103 md:w-1/3 hover:bg-gray-50 dark:border dark:border-slate-700 hover:dark:text-black dark:shadow-xs">
                 
                 <div class="flex flex-row gap-2 items-center justify-center">
                     <!-- shield check icon -->
@@ -171,7 +196,7 @@
             <!-- Card End -->
             
             <!-- Card Start -->
-             <div class="flex flex-row gap-2 py-8 px-4 items-center border border-gray-200 shadow-lg shadow-main rounded-lg hover:scale-103 md:w-1/3 hover:bg-gray-50 dark:border dark:border-slate-700 dark:shadow-xs">
+             <div class="flex flex-row gap-2 py-8 px-4 items-center border border-gray-200 shadow-lg shadow-main rounded-lg hover:scale-103 md:w-1/3 hover:bg-gray-50 dark:border dark:border-slate-700 hover:dark:text-black dark:shadow-xs">
                 
                 <div class="flex flex-row gap-2 items-center justify-center">
                     <i class="fa-solid fa-users-rays text-4xl text-main"></i>
@@ -179,14 +204,11 @@
                     <h3 class="font-bold text-xl">Clients satisfaits</h3>
                 </div>
 
-                <!-- <div class="flex flex-col gap-2">
-                </div> -->
-
              </div>
             <!-- Card End -->
 
             <!-- Card Start -->
-             <div class="flex flex-row gap-2 py-8 px-4 items-center border border-gray-200 shadow-lg shadow-main rounded-lg hover:scale-103 md:w-1/3 hover:bg-gray-50 dark:border dark:border-slate-700 dark:shadow-xs">
+             <div class="flex flex-row gap-2 py-8 px-4 items-center border border-gray-200 shadow-lg shadow-main rounded-lg hover:scale-103 md:w-1/3 hover:bg-gray-50 dark:border dark:border-slate-700 hover:dark:text-black dark:shadow-xs">
                 
                 <div class="flex flex-row gap-2 items-center justify-center">
                     <i class="fa-solid fa-cubes text-4xl text-main"></i>
@@ -218,9 +240,7 @@
     <!-- Logo Slider Section Start --> 
     <section class="dark:text-white " id="section">
 
-        <div class="flex flex-col gap-6 container">
-
-        <div class="flex flex-col gap-3 justify-center items-center">
+        <div class="flex flex-col gap-3 justify-center items-center container">
 
             <div class="flex flex-col gap-4 items-center text-center md:max-w-200">
             
@@ -241,14 +261,12 @@
    
         </div>
 
+        <!-- Slider -->
+        <div class="slider my-5">
+            <div class="swiper-wrapper swiper-wrapper-Logo gap-4" id="swiperContainer">
+                <!-- The Logos will insert here automaticly by JavaScript -->
+            </div>
         </div>
-
-    <!-- Slider -->
-    <div class="slider my-5">
-        <div class="swiper-wrapper gap-4" id="swiperContainer">
-            <!-- The Logos will insert here automaticly by JavaScript -->
-        </div>
-    </div>
 
     </section>
     <!-- Logo Slider Section End -->
@@ -260,7 +278,7 @@
         <div class="container flex flex-col gap-4">
             <div class="flex flex-col gap-8 justify-center items-center">
 
-                <div class="hidden md:flex flex-row gap-4 bg-gray-50 px-2 md:px-4 py-4 rounded-lg ">
+                <div class="hidden md:flex flex-row gap-4 bg-gray-50 px-2 md:px-4 py-4 rounded-lg dark:bg-gray-900 dark:text-white">
 
                     <div class="flex flex-row gap-2 items-center justify-center">
                         <i class="fa-solid fa-circle text-[8px] md:text-xs text-main"></i>
@@ -360,7 +378,7 @@
             <div class="flex flex-col gap-4 justify-center items-center">
                 <h3 class="font-bold text-2xl md:text-4xl">Nos Services</h3> 
 
-                <div class="flex flex-row gap-6 bg-gray-50 px-2 md:px-4 py-4 rounded-lg">
+                <div class="flex flex-row gap-6 bg-gray-50 px-2 md:px-4 py-4 rounded-lg dark:bg-gray-900 dark:text-white">
 
                     <div class="flex flex-row gap-2 items-center justify-center">
                         <i class="fa-solid fa-circle text-[8px] md:text-xs text-main"></i>
@@ -379,7 +397,7 @@
 
 
                     <!-- Card Start -->
-                     <div class="flex flex-col gap-4 py-8 px-6 text-center items-center border border-gray-200 shadow-lg shadow-main rounded-lg hover:scale-103 hover:bg-gray-50 md:w-1/3 dark:border dark:border-slate-700 dark:shadow-xs">
+                     <div class="flex flex-col gap-4 py-8 px-6 text-center items-center border border-gray-200 shadow-lg shadow-main rounded-lg hover:scale-103 hover:bg-gray-50 md:w-1/3 dark:border dark:border-slate-700 dark:shadow-xs hover:dark:text-black">
                         <i class="fa-solid fa-screwdriver-wrench text-4xl md:text-6xl py-4 px-4 bg-main text-white rounded-lg"></i>
                         <h3 class="font-bold text-xl">Réparation </h3>
                         <p class="text-gray-500 text-sm leading-relaxed dark:text-gray-400"><span class="main-link">Réparation</span> de smartphones et montres connectées. Changement d’écran, batterie, connecteurs, etc. Service rapide et fiable à Sidi Bel Abbès.</p>
@@ -387,7 +405,7 @@
                     <!-- Card End -->
                                           
                     <!-- Card Start -->
-                     <div class="flex flex-col gap-4 py-8 px-6 text-center items-center border border-gray-200 shadow-lg shadow-main rounded-lg hover:scale-103 hover:bg-gray-50 md:w-1/3 dark:border dark:border-slate-700 dark:shadow-xs">
+                     <div class="flex flex-col gap-4 py-8 px-6 text-center items-center border border-gray-200 shadow-lg shadow-main rounded-lg hover:scale-103 hover:bg-gray-50 md:w-1/3 dark:border dark:border-slate-700 dark:shadow-xs hover:dark:text-black">
                         <i class="fa-solid fa-cubes text-4xl md:text-6xl py-4 px-4 bg-main text-white rounded-lg"></i>
                         <h3 class="font-bold text-xl">Accessoires </h3>
                         <p class="text-gray-500 text-sm leading-relaxed dark:text-gray-400">Vente d’accessoires high-tech de qualité. AirPods, écouteurs Bluetooth, coques, câbles et plus. Livraison partout en Algérie, dans les 
@@ -418,7 +436,7 @@
                 <div class="flex flex-col gap-4 mt-8 md:flex-row">
                     
                     <!-- Card  Start -->
-                    <div class="flex flex-col gap-4  py-8 px-6 border border-gray-200 shadow-lg shadow-main rounded-lg hover:scale-103 hover:bg-gray-50 dark:border dark:border-slate-700 dark:shadow-xs">
+                    <div class="flex flex-col gap-4  py-8 px-6 border border-gray-200 shadow-lg shadow-main rounded-lg hover:scale-103 hover:bg-gray-50 dark:border dark:border-slate-700 dark:shadow-xs hover:dark:text-black">
 
                         <span class="flex items-center justify-center bg-main text-white rounded-full w-16 h-16">
                             <i class="fa-solid fa-tags text-2xl"></i>
@@ -430,7 +448,7 @@
                     <!-- Card  End -->
                                          
                     <!-- Card  Start -->
-                    <div class="flex flex-col gap-4  py-8 px-6 border border-gray-200 shadow-lg shadow-main rounded-lg hover:scale-103 hover:bg-gray-50 dark:border dark:border-slate-700 dark:shadow-xs">
+                    <div class="flex flex-col gap-4  py-8 px-6 border border-gray-200 shadow-lg shadow-main rounded-lg hover:scale-103 hover:bg-gray-50 dark:border dark:border-slate-700 dark:shadow-xs hover:dark:text-black">
 
                         <span class="flex items-center justify-center bg-main text-white rounded-full w-16 h-16">
                             <i class="fa-solid fa-truck-fast text-2xl"></i>
@@ -442,7 +460,7 @@
                     <!-- Card  End -->
                                          
                     <!-- Card  Start -->
-                    <div class="flex flex-col gap-4  py-8 px-6 border border-gray-200 shadow-lg shadow-main rounded-lg hover:scale-103 hover:bg-gray-50 dark:border dark:border-slate-700 dark:shadow-xs">
+                    <div class="flex flex-col gap-4  py-8 px-6 border border-gray-200 shadow-lg shadow-main rounded-lg hover:scale-103 hover:bg-gray-50 dark:border dark:border-slate-700 dark:shadow-xs hover:dark:text-black">
 
                         <span class="flex items-center justify-center bg-main text-white rounded-full w-16 h-16">
                             <i class="fa-solid fa-screwdriver-wrench text-2xl"></i>
@@ -454,7 +472,7 @@
                     <!-- Card  End -->
                                          
                     <!-- Card  Start -->
-                    <div class="flex flex-col gap-4  py-8 px-6 border border-gray-200 shadow-lg shadow-main rounded-lg hover:scale-103 hover:bg-gray-50 dark:border dark:border-slate-700 dark:shadow-xs">
+                    <div class="flex flex-col gap-4  py-8 px-6 border border-gray-200 shadow-lg shadow-main rounded-lg hover:scale-103 hover:bg-gray-50 dark:border dark:border-slate-700 dark:shadow-xs hover:dark:text-black">
 
                         <span class="flex items-center justify-center bg-main text-white rounded-full w-16 h-16">
                             <i class="fa-solid fa-headset text-2xl"></i>
@@ -471,6 +489,283 @@
 
      </section>
     <!-- Why Choose Us Section End -->
+
+    <!-- How To Order A service section Start -->
+          <section class="dark:text-white" id="section">
+
+        <div class="container flex flex-col gap-4">
+               
+                <div class="flex flex-col gap-2 text-center mx-auto md:max-w-200">
+                    <h3 class="font-bold text-2xl md:text-4xl ">Comment commander <span class="main-link">un service</span></h3>                   
+                </div>
+                    
+                <div class="flex flex-col gap-8 mt-8 md:flex-row">
+                    
+                    <!-- Card  Start -->
+                    <div class="flex flex-col items-center text-center gap-4 py-8 px-6 border border-gray-200 shadow-lg shadow-main rounded-lg md:w-1/3 hover:scale-103 hover:bg-gray-50 dark:border dark:border-slate-700 dark:shadow-xs hover:dark:text-black">
+
+                        <span class="flex items-center justify-center bg-main shadow-main shadow-lg text-white rounded-full w-16 h-16">
+                            <i class="fa-solid fa-1 text-2xl"></i>
+                        </span>
+                        <img loading="lazy" class="w-60" src="assets/GetStartedImgs/Contact.png" alt="">
+                        <h3 class="font-bold text-xl">Contact Us</h3>
+                         <p class="text-gray-500 text-sm leading-relaxed dark:text-gray-400">vous pouvez nous retrouver sur divers réseaux sociaux, ou <span class="main-link">Whatsapp</span> qualité à des tarifs accessibles pour tous. Vous en avez pour votre argent.</p>
+
+                    </div>
+                    <!-- Card  End -->
+                                         
+                    <!-- Card  Start -->
+                    <div class="flex flex-col items-center text-center gap-4 py-8 px-6 border border-gray-200 shadow-lg shadow-main rounded-lg md:w-1/3 hover:scale-103 hover:bg-gray-50 dark:border dark:border-slate-700 dark:shadow-xs hover:dark:text-black">
+
+                        <span class="flex items-center justify-center bg-main shadow-main shadow-lg text-white rounded-full w-16 h-16">
+                            <i class="fa-solid fa-2 text-2xl"></i>
+                        </span>
+                        <img loading="lazy" class="w-60" src="assets/GetStartedImgs/Plannig.png" alt="">
+                        <h3 class="font-bold text-xl">Planification</h3>
+                         <p class="text-gray-500 text-sm leading-relaxed dark:text-gray-400">ensemble, nous élaborons un excellent plan pour <span class="main-link">le service</span> que vous avez commandé</p>
+
+                    </div>
+                    <!-- Card  End -->
+                                         
+                    <!-- Card  Start -->
+                    <div class="flex flex-col items-center text-center gap-4 py-8 px-6 border border-gray-200 shadow-lg shadow-main rounded-lg md:w-1/3 hover:scale-103 hover:bg-gray-50 dark:border dark:border-slate-700 dark:shadow-xs hover:dark:text-black">
+
+                        <span class="flex items-center justify-center bg-main shadow-main shadow-lg text-white rounded-full w-16 h-16">
+                            <i class="fa-solid fa-3 text-2xl"></i>
+                        </span>
+                        <img loading="lazy" class="w-60" src="assets/GetStartedImgs/WorkTeam.png" alt="">
+                        <h3 class="font-bold text-xl"> Commencez à travaille</h3>
+                         <p class="text-gray-500 text-sm leading-relaxed dark:text-gray-400">ous commençons à travailler avec beaucoup de <span class="main-link">créativité</span> pour atteindre l'objectif que nous nous sommes fixé.</p>
+
+                    </div>
+                    <!-- Card  End -->
+
+                </div>
+
+        </div>
+
+     </section>
+    <!-- How To Order A service section End -->
+
+    <!-- Instagram Post slider Start -->
+     <section class="dark:text-white" id="section">
+
+        <div class="flex flex-col gap-4 justify-center items-center container">
+
+        <div class="flex flex-col gap-4 items-center text-center md:max-w-200">
+            
+                <div class="flex flex-row gap-2 text-insta items-center ">
+                <i class="fa-brands fa-instagram gradient"></i>
+                <h3 class="font-bold text-sm gradient">Suivez nous sur Instagram</h3>
+                </div>
+
+                <h3 class="font-bold text-2xl md:text-4xl">Nos <span class="gradient">derniers articles</span> </h3>
+                <p class="text-gray-500 text-sm leading-relaxed dark:text-gray-400">
+                    les clients qui font confiance à <a href="https://www.instagram.com/sam_fix_store/" class="main-link">SamFix Store</a>
+                      pour la fiabilité et l’expertise. Notre engagement envers la qualité, le service et l’innovation nous permet de répondre
+                      aux besoins d’une clientèle variée à travers les <span class="main-link">58 wilayas.</span></span>
+                </p>
+
+        </div>
+
+        <div class="container">
+                <!-- Slider -->
+            <div class="swiper my-5 ">
+                <div class="swiper-wrapper gap-2" id="swipContainer">                    
+                    <!-- The instagram cards will insert here automaticly by JS -->
+                </div>
+            </div>
+        </div>
+
+        <div class="container flex flex-col gap-4 items-center py-8  bg-gradient-to-r from-[#833ab4] to-[#fd1d1d] text-white rounded-lg">
+           
+            <div class="flex flex-col gap-2 items-center md:max-w-200 ">
+                <h3 class="font-bold text-sm md:text-lg ">Rejoignez notre communaute Instagram!</h3>
+                <p class="text-white text-xs md:text-sm leading-relaxed  text-center">Suivez-nous pour decouvrir nos derniers produits, promocions exlusives et  conseills tech. Plus de contenu vous attend sur notre profile !</p>
+                    <!-- CTA Whatsapp Button Start -->
+                    <a href="https://wa.me/+2130798507160">
+                        <button class="bg-white">
+                            <i class="fa-brands fa-instagram text-2xl gradient"></i>
+                            <p class="gradient">Suivez-nous sur Instagram</p>
+                        </button>
+                    </a>
+                    <!-- CTA Whatsapp Button End -->           
+            </div>
+
+        </div>
+
+        </div>
+
+     </section>
+    <!-- Instagram Post slider End -->
+
+    <!-- Contact Start -->
+     <section class="dark:text-white" id="section">
+
+        <div class="container flex flex-col gap-6 md:flex-row">
+            
+            <!-- Left -->
+            <div class="flex flex-col gap-4 md:w-1/2">
+                <h3 class="font-bold text-2xl md:text-4xl">Contactez-nous</h3>
+                <p class="text-gray-500 text-sm leading-relaxed dark:text-gray-400"> Besoin d’un renseignement ou d’une commande rapide ? Contactez-nous facilement par <span class="main-link">Whatsapp</span>, appel ou sur nos réseaux sociaux. Nous sommes disponibles et réactifs 24/7.</p>
+                
+                <!-- Card Start -->
+                <div class="flex flex-row items-center md:w-100 gap-4 px-4 py-4 md:px-6  border border-gray-200 shadow-lg shadow-main rounded-lg hover:scale-103 hover:bg-gray-50 dark:border dark:border-slate-700 dark:shadow-xs hover:dark:text-black">
+                        <span class="flex items-center justify-center bg-main text-white rounded-full w-14 h-14">
+                            <i class="fa-solid fa-phone text-xl"></i>
+                        </span>
+
+                        <div class="flex flex-col justify-center gap-1">
+                            <h3 class="font-bold text-lg md:text-xl text-main">Des questions ?</h3>
+                            <h3 class="text-sm md:text-lg">+213 798-507-160</h3>
+                        </div>
+                </div>
+                <!-- Card End -->
+                                 
+                <!-- Card Start -->
+                <div class="flex flex-row items-center md:w-100 gap-4 px-4 py-4 md:px-6  border border-gray-200 shadow-lg shadow-main rounded-lg hover:scale-103 hover:bg-gray-50 dark:border dark:border-slate-700 dark:shadow-xs hover:dark:text-black">
+                        <span class="flex items-center justify-center bg-main text-white rounded-full w-14 h-14">
+                            <i class="fa-solid fa-location-dot text-xl"></i>
+                        </span>
+
+                        <div class="flex flex-col justify-center gap-1">
+                            <h3 class="font-bold text-lg md:text-xl text-main">Visitez Nous !</h3>
+                            <h3 class="text-sm md:text-lg">Bab Eddaya, Sidi Bel Abbès</h3>
+                        </div>
+                </div>
+                <!-- Card End -->
+                                 
+                <!-- Card Start -->
+                <div class="flex flex-row items-center md:w-100 gap-4 px-4 py-4 md:px-6  border border-gray-200 shadow-lg shadow-main rounded-lg hover:scale-103 hover:bg-gray-50 dark:border dark:border-slate-700 dark:shadow-xs hover:dark:text-black">
+                        <span class="flex items-center justify-center bg-main text-white rounded-full w-14 h-14">
+                            <i class="fa-solid fa-solid fa-clock text-xl"></i>
+                        </span>
+
+                        <div class="flex flex-col justify-center gap-1">
+                            <h3 class="font-bold text-lg md:text-xl text-main">Horaires d’ouverture</h3>
+                            <h3 class="text-sm md:text-lg">Samedi à Jeudi !</h3>
+                        </div>
+                </div>
+                <!-- Card End -->
+
+            </div>
+
+            <!-- Right -->
+             <div class=" md:w-1/2">
+                <iframe class="w-full" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13043.84746251646!2d-0.632663!3d35.182503!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd7f004c68d7f7b5%3A0xcb2d8215dfb1c9c3!2sBab%20Daya%2C%20Sidi%20Bel%20Abb%C3%A8s!5e0!3m2!1sen!2sdz!4v1748853408393!5m2!1sen!2sdz" width="600" height="450" style="border:0; border-radius: 5px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+             </div>
+        </div>
+
+    </section>
+    <!-- Contact End -->
+      
+    <!-- Footer Start -->
+    <footer class="relative text-white bg-white border border-gray-200">
+        
+    <!-- Shape Animations Start -->
+    <div class="absolute w-full h-full overflow-hidden opacity-50 ">
+        <div class="absolute left-10 w-32 h-32 bg-main rounded-full filter blur-3xl animate-pulse"></div>
+        <div class="absolute top-20 right-10 w-40 h-40 bg-main rounded-full filter blur-3xl animate-pulse dark:bg-main"></div>
+        <div class="absolute bottom-40 left-1/2 w-48 h-48 bg-main rounded-full filter blur-3xl animate-pulse dark:bg-main"></div>
+    </div>
+    <!-- Shape Animations End -->
+
+    <!-- Main footer content -->
+    <div class="container relative py-6">
+        <!-- Grid layout -->
+        <div class=" grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-12">
+        
+        <!-- Logo/Name section  -->
+
+        <div class="group">
+
+            <div class="flex items-center gap-2 mb-6">
+                <!-- Logo Start -->
+                <div class="">
+                    <a href=""><img class="w-30" src="/assets/Brand/WhiteLogo-r.png" alt=""></a>
+                </div>
+                <!-- Logo End -->
+            </div>
+
+            <p class="text-gray-500 mb-6"><a href="https://www.instagram.com/sam_fix_store/" class="main-link">SamFix Store</a> est votre expert local en vente d’accessoires high-tech et en réparation de téléphones et montres connectées à Sidi Bel Abbès. Nous livrons partout en Algérie <span class="main-link">58 wilayas</span></p>
+                                <!-- CTA Whatsapp Button Start -->
+                            <a href="index.html">
+                                <button class="bg-main text-white ">
+                                    <i class="fa-brands fa-whatsapp text-2xl"></i>
+                                    Connectons-nous
+                                </button>
+                            </a>
+                        <!-- CTA Whatsapp Button End -->
+        </div>
+
+        <!-- Quick links with hover effect -->
+        <div>
+            <h3 class="text-lg font-semibold mb-6 relative inline-block">
+            <span class="relative z-10 text-black">Quick Links</span>
+            </h3>
+
+            <ul class="flex flex-col gap-3">
+            <li>
+                <a href="#" class="text-gray-500 hover:text-green-500 hover:pl-2 flex items-center">Home</a>
+            </li>
+
+            <li>
+                <a href="#" class="text-gray-500 hover:text-green-500 hover:pl-2 flex items-center">About Us</a>
+            </li>
+
+            <li>
+                <a href="#" class="text-gray-500 hover:text-green-500 hover:pl-2 flex items-center">Services</a>
+            </li>
+            
+            <li>
+                <a href="#" class="text-gray-500 hover:text-green-500 hover:pl-2 flex items-center">Blogs</a>
+            </li>
+            
+            <li>
+                <a href="#" class="text-gray-500 hover:text-green-500 hover:pl-2 flex items-center">Contact Us</a>
+            </li>
+            
+        </div>
+
+        <!-- Contact info with animated icons -->
+        <div class="flex flex-col gap-4">
+            <h3 class="text-lg font-semibold text-black">Contactez-nous</h3>
+            <p class="text-gray-500  max-w-70">Contactez-nous facilement par  <a href="https://wa.me/+2130798507160" class="main-link">Whatsapp</a>, appel ou sur nos réseaux sociaux.</p>
+                <!-- Social media with hover glow -->
+            <div class="flex gap-2">
+
+            <a href="https://www.tiktok.com/@sam.fix.store" class="w-10 h-10 rounded-full bg-black flex items-center justify-center hover:bg-green-500 hover:shadow-lg hover:shadow-blue-500/30">
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+            
+            <a href="https://www.instagram.com/sam_fix_store/" class="w-10 h-10 rounded-full bg-black flex items-center justify-center hover:bg-green-500 hover:shadow-lg hover:shadow-sky-500/30">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            
+            <a href="https://www.facebook.com/samfix22" class="w-10 h-10 rounded-full bg-black flex items-center justify-center hover:bg-green-500 hover:shadow-lg hover:shadow-purple-500/30">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="https://wa.me/+2130798507160" class="w-10 h-10 rounded-full bg-black flex items-center justify-center hover:bg-green-500 hover:shadow-lg hover:shadow-purple-500/30">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            
+        </div>
+        </div>
+
+        </div>
+
+    </div>
+        <!-- Bottom section with animated copyright -->
+        <div class="container py-4 border-t border-gray-200  flex flex-col md:flex-row justify-center items-center">
+        <p class="text-gray-400 text-sm mb-4 md:mb-0">
+            &copy; <span id="year"></span> <span class="main-link">SamFix</span>  All rights reserved.
+        </p>
+        </div>
+
+    
+    </footer>
+    <!-- Footer End -->
 
     <!-- JS Link -->
     <script src="src/script.js"></script>
