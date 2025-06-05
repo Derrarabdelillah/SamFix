@@ -1,28 +1,15 @@
-  @import "tailwindcss";
+@import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
     --color-main: #50B848;
     --color-primary: #000000;
-    --color-secondry: #FFFFFF
-    --color-paragraph: #6a7282;
     --color-grayBorder: #e5e7eb;
 
     /* ? Dark Mode */
     --color-mainD: #000a1c;
-    --color-primaryD: #ffffff;
-    --color-secondryD: #000000;
 }
-
-/*
-  - Cards:
-  - Border Color: border-gray-200;
-  - Dark Mode: border-slate-700
-
-  hover:
-  - background color: bg-gray-50
-*/
 
 /* ? Start Css globel reset */
 
@@ -38,9 +25,6 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-    overflow-x: hidden;
-}
 
 button {
     padding: 10px 15px 10px 15px;
@@ -90,25 +74,15 @@ button:hover {
   -webkit-text-fill-color: transparent;
 }
 
-.cards {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, auto);
-  gap: 1rem;
-  width: 50%;
-  margin-left: auto;
-}
-
 /* Whatsapp Button */
 .top {
-    z-index: 1903487;
+    z-index: 999;
     right: -200px;
 }
 
 .active {
     right: 10px;
 }
-
 
 /* top  Scroller */
 .scroller {

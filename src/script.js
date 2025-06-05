@@ -62,12 +62,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Logo Data
     let logoSliderData = [
-        { type: 'image', src: 'assets/LogoSliderImgs/Samsung-Logo.wine.png', alt: 'Samsung' },
-        { type: 'image', src: 'assets/LogoSliderImgs/Huawei-Logo.wine.png', alt: 'Huawei' },
-        { type: 'image', src: 'assets/LogoSliderImgs/OnePlus-Logo.wine.png', alt: 'OnePlus' },
-        { type: 'image', src: 'assets/LogoSliderImgs/Oppo-Logo.wine.png', alt: 'Oppo' },
-        { type: 'image', src: 'assets/LogoSliderImgs/Sony-Logo.wine.png', alt: 'Sony' },
-        { type: 'image', src: 'assets/LogoSliderImgs/Vivo-Logo.wine.png', alt: 'Vivo' },
+        { type: 'image', src: 'assets/LogoSliderImgs/Samsung-Logo.wine.webp', alt: 'Samsung' },
+        { type: 'image', src: 'assets/LogoSliderImgs/Huawei-Logo.wine.webp', alt: 'Huawei' },
+        { type: 'image', src: 'assets/LogoSliderImgs/OnePlus-Logo.wine.webp', alt: 'OnePlus' },
+        { type: 'image', src: 'assets/LogoSliderImgs/Oppo-Logo.wine.webp', alt: 'Oppo' },
+        { type: 'image', src: 'assets/LogoSliderImgs/Nokia-Logo.wine.webp', alt: 'Nokia' },
+        { type: 'image', src: 'assets/LogoSliderImgs/Vivo-Logo.wine.webp', alt: 'Vivo' },
     ];
 
     // Clear existing content
@@ -96,12 +96,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Cards Data
     let cardsData = [
-        { imageSrc: "assets/InstagramImgs/insta1.jpg", postLink: "https://www.instagram.com/p/DKE7Snfsu--/?img_index=1", title: "Casque Noir, Casque Bluetooth",   alt:"Casque Bluetooth"},
-        { imageSrc: "assets/InstagramImgs/insta2.jpg", postLink: "https://www.instagram.com/p/DKE42W2MwDS/?img_index=1", title: "CASQUE Hoco W35 Max 90H",   alt:"CASQUE Hoco"},
-        { imageSrc: "assets/InstagramImgs/insta3.jpg", postLink: "https://www.instagram.com/p/DKE2AzAsyB4/?img_index=1", title: "Led Wireless Charging Speaker",   alt:"Speaker"},
-        { imageSrc: "assets/InstagramImgs/insta4.jpg", postLink: "https://www.instagram.com/p/DH_jkscISxF/", title: "Smartwatch HainoTeko Rw-53",   alt:"martwatch"},
-        { imageSrc: "assets/InstagramImgs/insta5.jpg", postLink: "https://www.instagram.com/p/DH9octOoQWG/?img_index=1", title: "Infinix Smart 9",   alt:"Infinix"},
-        { imageSrc: "assets/InstagramImgs/insta6.jpg", postLink: "https://www.instagram.com/p/DHzJgJYoaSN/?img_index=1", title: "Casque Hoco W35 Max", alt:"Casque"},
+        { imageSrc: "assets/InstagramImgs/insta1.webp", postLink: "https://www.instagram.com/p/DKE7Snfsu--/?img_index=1", title: "Casque Noir, Casque Bluetooth",   alt:"Casque Bluetooth"},
+        { imageSrc: "assets/InstagramImgs/insta2.webp", postLink: "https://www.instagram.com/p/DKE42W2MwDS/?img_index=1", title: "CASQUE Hoco W35 Max 90H",   alt:"CASQUE Hoco"},
+        { imageSrc: "assets/InstagramImgs/insta3.webp", postLink: "https://www.instagram.com/p/DKE2AzAsyB4/?img_index=1", title: "Led Wireless Charging Speaker",   alt:"Speaker"},
+        { imageSrc: "assets/InstagramImgs/insta4.webp", postLink: "https://www.instagram.com/p/DH_jkscISxF/", title: "Smartwatch HainoTeko Rw-53",   alt:"martwatch"},
+        { imageSrc: "assets/InstagramImgs/insta5.webp", postLink: "https://www.instagram.com/p/DH9octOoQWG/?img_index=1", title: "Infinix Smart 9",   alt:"Infinix"},
+        { imageSrc: "assets/InstagramImgs/insta6.webp", postLink: "https://www.instagram.com/p/DHzJgJYoaSN/?img_index=1", title: "Casque Hoco W35 Max", alt:"Casque"},
     ]
 
     // Clear existing content
@@ -136,8 +136,8 @@ document.addEventListener("DOMContentLoaded", () => {
     } )
 })
 
-    // Update copyright year
-    document.getElementById('year').textContent = new Date().getFullYear();
+// Update copyright year
+document.getElementById('year').textContent = new Date().getFullYear();
 
 
 
