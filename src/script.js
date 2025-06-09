@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Loop over logoSliderData and create slides
     logoSliderData.forEach((element) => {
         let slideDiv = document.createElement('div');
-        slideDiv.className = 'swiper-slide border border-gray-200 shadow-lg shadow-main rounded-lg overflow-x-hidden hover:bg-gray-50 dark:border dark:border-slate-700 dark:shadow-xs hover:dark:bg-gray-50';
+        slideDiv.className = 'swiper-slide border border-gray-200 shadow-lg shadow-main rounded-lg overflow-x-hidden  hover:bg-gray-50 dark:border dark:border-slate-700 dark:shadow-xs hover:dark:bg-gray-50';
 
         let img = document.createElement('img');
         img.loading = 'lazy';
